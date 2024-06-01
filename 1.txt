@@ -1,0 +1,9 @@
+首先创建本地仓库
+$ git branch -m main
+$ git remote add origin https://github.com/6sakura6/My_First_Repository.git
+$ git remote -v # 查看本地对应远程库信息
+$ git pull --rebase origin main
+$ git push --set-upstream origin main
+									# 这条命令做了两件事：（查看本地和远程分支：$ git branch -a）
+									   把你的本地main分支推送到远程仓库origin的main分支。
+									   设置你的本地main分支跟踪远程的origin/main分支，这样未来的推送和拉取都会默认针对这个上游分支进行。
